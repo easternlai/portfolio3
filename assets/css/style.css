@@ -1,0 +1,14 @@
+/*
+colors: #17252A, #2B7A78, #3AAFA9, #DEF2F1, #FEFFFF
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
