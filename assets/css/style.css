@@ -12,16 +12,16 @@ html {
     font-size: 10px;
 }
 .main-wrapper{
-    margin: 10px;
     min-height: 100vh;
     height: 100%;
     background-color: #FEFFFF;
 }
 
 .header {
-    height: 70vh;
+    height: 60vh;
     background-color: #2B7A78;
     position: relative;
+    margin-bottom: 10rem;
 }
 
 .header-content{
@@ -37,7 +37,7 @@ html {
 }
 
 .header-sub{
-    margin-top: 15px;
+    margin-top: 1.5rem;
     font-size: 2.5rem;
     color: #DEF2F1;
     text-align: right;
@@ -46,9 +46,69 @@ html {
 #profile-pic{
     position: absolute;
     background-color: #3AAFA9;
-    transform: translate(10%, 50%);
+    transform: translate(10%, 25%);
     bottom: 0%;
-    border-radius: 4px;
-    padding: 5px;
-    width: 250px;
+    border-radius: .4rem;
+    padding: .5rem;
+    width: 25rem;
+}
+
+.about-me{
+    padding: 0px 3rem;
+}
+
+.about{
+    font-size: 2em;
+}
+
+.about-image{
+    width: 30vw;
+    border: .5rem;
+    border-style: solid;
+    border-color: #3AAFA9;
+    margin: 0px 1rem;
+}
+
+.network-image, .project-management-image{
+    float: right;
+}
+
+.coding-image{
+    float:left;
+}
+
+.about{
+    margin-bottom: 2rem;
+}
+
+.about p{
+    padding: 0px 2.5rem;
+}
+
+.about::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .footer {
+    height: 20vh;
+    background-color: #2B7A78;
+    position: relative;
+    margin-top: 3rem;
+    color: #FEFFFF;
+    font-size: 3rem;
+}
+
+.footer-content{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.footer-item{
+    padding: 0 1.5rem;
 }
