@@ -6,6 +6,7 @@ colors: #17252A, #2B7A78, #3AAFA9, #DEF2F1, #FEFFFF
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
 }
 
 html {
@@ -34,13 +35,15 @@ html {
 
 #header-name {
     font-size: 8rem;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .header-sub{
     margin-top: 1.5rem;
     font-size: 2.5rem;
-    color: #DEF2F1;
+    color: #17252A;
     text-align: right;
+    animation: appear 3s ease-in-out;
 }
 
 .nav-buttons {
@@ -144,6 +147,10 @@ html {
     padding: 0 1.5rem;
 }
 
+.black-span {
+    color: #17252A;
+}
+
 .portfolio{
     margin-top: 2.5rem;
     padding: 0px 3rem;
@@ -156,3 +163,44 @@ html {
 .font-change{
     color: #2B7A78;
 }
+
+@keyframes appear {
+    0% {
+     
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@media screen and (max-width: 870px) {
+    html{
+        font-size: 6px;
+    }
+    .header{
+        height: 40vh;
+    }
+    .header-content{
+        width: 100vw;
+        text-align: center;
+    }
+    .header-sub{
+        text-align: center;
+    }
+    #profile-pic{
+        display:none;
+    }
+    .nav-buttons {
+        bottom: 5%;
+        right: 50%;
+        display: inline;
+        transform: translateX(50%);
+    }
+    
+    .footer{
+        height: 15vh;
+    }
+  }
