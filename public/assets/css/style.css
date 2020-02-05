@@ -82,9 +82,20 @@ html {
     padding: 0px 3rem;
 }
 
-.about{
+.about, .testimonial-form{
     font-size: 2em;
+} 
+
+.testimonial-form{
+    padding-left: 20px;
 }
+
+#testimonial-input {
+    width: 80%;
+    font: 2em;
+}
+
+
 
 .about-image{
     width: 30vw;
